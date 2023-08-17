@@ -1,0 +1,98 @@
+body {
+  align-items: none;
+  justify-content: none;
+  background: linear-gradient(-45deg, #b1fca0, #fcded4,  #CFDEF3, #e1e1f0);
+  /* old backgroud color  background: linear-gradient(0deg, #E0EAFC, #CFDEF3);*/
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+    
+    
+}
+
+    .search-container {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius:20px;
+      width: 300px;
+      /* background-color: #fff; */
+      /*  transition: background-color 0.3s; */
+      box-shadow: 2.2px 2.2px 6px #000000;
+      transition: background-color 0.3s, width 0.3s; /* Add transition for width change */
+      
+      background-color: rgba(255, 255, 255, 0.5); /* Set a semi-transparent white background */
+      backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+
+    }
+
+    .search-container:hover {
+      background-color: #fff;
+      
+      width: 350px; /* Increase the width on hover */
+    }
+
+    .search-container input[type="text"] {
+      background-color: transparent; /* Make the input background transparent */
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 5px;
+    }
+
+    .search-container button {
+      background-color: rgba(0, 123, 255, 0.8); /* Adjust the button background color for visibility */
+      /* background-color: #007BFF; */
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      box-shadow: 1px 1px 4px #000000;
+    }
+
+    .search-container button:hover {
+      background-color: #0056b3;
+    }
+    .result-container {
+      margin: 10px;
+    }
+  
+    .result-div {
+      display: flex;
+      font-family: "Roboto Mono", monospace;
+      align-items: center;
+      padding: 5px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0.5px 0.5px 4px #000000;
+    }
+    .result-div img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .popup {
+      display: none;
+      position: absolute;
+      top: 0; /* Change this to 0 to show the popup above the searched result */
+      left: 0; /* Change this to 0 to show the popup on the left */
+      background-color: white;
+      padding: 10px;
+      border: 1px solid black;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+    
+
+    .result-div:hover {
+  background-color:#a3ffb9;
+  }    
